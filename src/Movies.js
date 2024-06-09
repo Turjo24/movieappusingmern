@@ -13,11 +13,11 @@ const Movies = () => {
 
         const { imdbID,Title,Poster } = curMovie;
 
-        return <NavLink to ={'movie/${imdbID}'}>
+        return <NavLink to ={'movie/${imdbID}'} key={imdbID}>
           <div className="card">
             <div className="card-info">
               <h2>{Title}</h2>
-              <img src= {Poster} alt={imdbID} srcset="" />
+              <img src= {Poster} alt= {imdbID} srcset="" />
             </div>
           </div>
         </NavLink>;
